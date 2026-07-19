@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(powder.png);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    min-height:100vh;
+}
+
+header{
+    text-align: center;
+    color: white;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+header h1{
+    font-size:clamp(40px,6vw,64px);
+}
+
+header p{
+    font-size:clamp(16px,2.5vw,24px);
+}
+
+main{
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center; /* Tengah secara vertikal */
+    align-items:center;     /* Tengah secara horizontal */
+
+    text-align:center;
+    gap:20px; /* Jarak antar elemen */
+}
+
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    padding:clamp(8px,2vw,10px) clamp(20px,4vw,24px);
+    font-size:clamp(14px,2vw,18px);
+    border-radius: 6px;
+    background-color: #612d1f;
+    color: #93a72f;
+    box-shadow: 0 6px 16px rgba(0,0,0,.25);
+    transition: all .3s ease;
+}
+
+.btn:hover{
+    transform: translateY(-2px) scale(1.2);
+    box-shadow: 0 12px 28px rgba(97,45,31,.45);
+}
+
+.silkscreen-regular {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.silkscreen-bold {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width:768px){
+
+    header h1{
+        font-size:42px;
+    }
+
+    header p{
+        font-size:18px;
+    }
+
+    .btn{
+        padding:8px 20px;
+        font-size:16px;
+    }
+
+}
